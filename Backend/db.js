@@ -16,7 +16,7 @@ await mongoose.connect(mongoURI,async(err,result) => {
      const fetched_data= await mongoose.connection.db.collection("sample");
      fetched_data.find({}).toArray(function(err,data){
       if(err) console.log(err);
-      else console.log();
+      else console.log(); /// data
      })
   }
 })
